@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-26T23:07:45 IST" name="TestNG Regression Suite" finished-at="2024-06-26T23:07:52 IST" duration-ms="6965">
+    <groups>
+    </groups>
+    <test started-at="2024-06-26T23:07:45 IST" name="Login Page Test" finished-at="2024-06-26T23:07:52 IST" duration-ms="6965">
+      <class name="com.qa.opencart.tests.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@1cf336fd]" started-at="2024-06-26T23:07:45 IST" name="setUp" finished-at="2024-06-26T23:07:48 IST" duration-ms="2743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginPageTitleTest()[pri:1, instance:com.qa.opencart.tests.LoginPageTest@1cf336fd]" started-at="2024-06-26T23:07:48 IST" name="loginPageTitleTest" finished-at="2024-06-26T23:07:48 IST" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method signature="loginPageURLTest()[pri:2, instance:com.qa.opencart.tests.LoginPageTest@1cf336fd]" started-at="2024-06-26T23:07:48 IST" name="loginPageURLTest" finished-at="2024-06-26T23:07:48 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageURLTest -->
+        <test-method signature="forgotPwdLinkExistTest()[pri:3, instance:com.qa.opencart.tests.LoginPageTest@1cf336fd]" started-at="2024-06-26T23:07:48 IST" name="forgotPwdLinkExistTest" finished-at="2024-06-26T23:07:49 IST" duration-ms="632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPwdLinkExistTest -->
+        <test-method signature="loginTest()[pri:4, instance:com.qa.opencart.tests.LoginPageTest@1cf336fd]" started-at="2024-06-26T23:07:49 IST" name="loginTest" finished-at="2024-06-26T23:07:52 IST" duration-ms="3312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- com.qa.opencart.tests.LoginPageTest -->
+    </test> <!-- Login Page Test -->
+  </suite> <!-- TestNG Regression Suite -->
+</testng-results>

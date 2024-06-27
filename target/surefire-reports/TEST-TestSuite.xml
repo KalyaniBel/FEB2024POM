@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="31.009" tests="17" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\kalya\apache-maven-3.9.8\boot\plexus-classworlds-2.8.0.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="maven.conf" value="C:\Users\kalya\apache-maven-3.9.8/conf"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11\bin"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install -Denv=qa"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="C:\Users\kalya\apache-maven-3.9.8"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\kalya"/>
+    <property name="user.language" value="en"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.21+9-LTS-193"/>
+    <property name="user.name" value="kalya"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\kalya\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.21"/>
+    <property name="user.dir" value="C:\Users\kalya\eclipse-workspace\Feb2024POMSeries"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\kalya\eclipse-workspace\Feb2024POMSeries"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="env" value="qa"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-11\bin;C:\Users\kalya\apache-maven-3.9.8\bin;C:\Users\kalya\scoop\shims;C:\Users\kalya\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.21+9-LTS-193"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="classworlds.conf" value="C:\Users\kalya\apache-maven-3.9.8\bin\m2.conf"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="library.jansi.path" value="C:\Users\kalya\apache-maven-3.9.8\lib\jansi-native"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="loginPageTitleTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.533"/>
+  <testcase name="loginPageURLTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.051"/>
+  <testcase name="forgotPwdLinkExistTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.066"/>
+  <testcase name="productHeaderTest" classname="com.qa.opencart.tests.ProductInfoPageTest" time="1.384"/>
+  <testcase name="productHeaderTest" classname="com.qa.opencart.tests.ProductInfoPageTest" time="1.195"/>
+  <testcase name="productHeaderTest" classname="com.qa.opencart.tests.ProductInfoPageTest" time="0.877"/>
+  <testcase name="productHeaderTest" classname="com.qa.opencart.tests.ProductInfoPageTest" time="1.158"/>
+  <testcase name="productHeaderTest" classname="com.qa.opencart.tests.ProductInfoPageTest" time="1.053"/>
+  <testcase name="productHeaderTest" classname="com.qa.opencart.tests.ProductInfoPageTest" time="2.718"/>
+  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageTest" time="1.837">
+    <failure message="====TITLE NOT FOUND==== expected [My Account] but found [Account Login]" type="java.lang.AssertionError">java.lang.AssertionError: ====TITLE NOT FOUND==== expected [My Account] but found [Account Login]
+	at com.qa.opencart.tests.LoginPageTest.loginTest(LoginPageTest.java:29)
+</failure>
+    <system-out><![CDATA[productHeaderTest started!
+I am in onTestStart method productHeaderTest start
+Searching:  canon
+element is displayed   By.name: search
+title not found
+Account Page Title  :Account Login
+I am in onTestFailure method loginTest failed
+Screenshot captured for test case:loginTest
+loginTest failed!
+]]></system-out>
+  </testcase>
+  <testcase name="productImageCountTest" classname="com.qa.opencart.tests.ProductInfoPageTest" time="3.085"/>
+  <testcase name="productImageCountTest" classname="com.qa.opencart.tests.ProductInfoPageTest" time="1.533"/>
+  <testcase name="productImageCountTest" classname="com.qa.opencart.tests.ProductInfoPageTest" time="1.817"/>
+  <testcase name="productImageCountTest" classname="com.qa.opencart.tests.ProductInfoPageTest" time="1.154"/>
+  <testcase name="productImageCountTest" classname="com.qa.opencart.tests.ProductInfoPageTest" time="1.378"/>
+  <testcase name="productImageCountTest" classname="com.qa.opencart.tests.ProductInfoPageTest" time="1.015"/>
+  <testcase name="productInfoTest" classname="com.qa.opencart.tests.ProductInfoPageTest" time="1.943">
+    <failure message="invalid selector&#10;from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;Unable to locate an element with the xpath expression //div[@id=&apos;content&apos;]//ul[@class=&apos;list-unstyled&apos;])[2]/li because of the following error:\nSyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//div[@id=&apos;content&apos;]//ul[@class=&apos;list-unstyled&apos;])[2]/li&apos; is not a valid XPath expression.&quot;}&#10;  (Session info: chrome=126.0.6478.63)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception&#10;Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a905fd68c66bfd7bc2f8d48d0815e059, findElements {value=//div[@id=&apos;content&apos;]//ul[@class=&apos;list-unstyled&apos;])[2]/li, using=xpath}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.63, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: C:\Users\kalya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60535}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60535/devtoo..., se:cdpVersion: 126.0.6478.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a905fd68c66bfd7bc2f8d48d0815e059" type="org.openqa.selenium.InvalidSelectorException">org.openqa.selenium.InvalidSelectorException: 
+invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //div[@id='content']//ul[@class='list-unstyled'])[2]/li because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@id='content']//ul[@class='list-unstyled'])[2]/li' is not a valid XPath expression."}
+  (Session info: chrome=126.0.6478.63)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a905fd68c66bfd7bc2f8d48d0815e059, findElements {value=//div[@id='content']//ul[@class='list-unstyled'])[2]/li, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.63, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: C:\Users\kalya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60535}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60535/devtoo..., se:cdpVersion: 126.0.6478.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a905fd68c66bfd7bc2f8d48d0815e059
+	at com.qa.opencart.tests.ProductInfoPageTest.productInfoTest(ProductInfoPageTest.java:63)
+</failure>
+    <system-out><![CDATA[productInfoTest started!
+I am in onTestStart method productInfoTest start
+Searching:  macbook
+element is displayed   By.name: search
+Product Header =====MacBook Pro
+Total Images Of Product is ========4
+I am in onTestFailure method productInfoTest failed
+Screenshot captured for test case:productInfoTest
+productInfoTest failed!
+]]></system-out>
+  </testcase>
+</testsuite>

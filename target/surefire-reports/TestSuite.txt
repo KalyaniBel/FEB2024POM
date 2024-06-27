@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 31.009 s <<< FAILURE! - in TestSuite
+loginTest(com.qa.opencart.tests.LoginPageTest)  Time elapsed: 1.837 s  <<< FAILURE!
+java.lang.AssertionError: ====TITLE NOT FOUND==== expected [My Account] but found [Account Login]
+	at com.qa.opencart.tests.LoginPageTest.loginTest(LoginPageTest.java:29)
+
+productInfoTest(com.qa.opencart.tests.ProductInfoPageTest)  Time elapsed: 1.943 s  <<< FAILURE!
+org.openqa.selenium.InvalidSelectorException: 
+invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //div[@id='content']//ul[@class='list-unstyled'])[2]/li because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@id='content']//ul[@class='list-unstyled'])[2]/li' is not a valid XPath expression."}
+  (Session info: chrome=126.0.6478.63)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a905fd68c66bfd7bc2f8d48d0815e059, findElements {value=//div[@id='content']//ul[@class='list-unstyled'])[2]/li, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.63, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: C:\Users\kalya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60535}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60535/devtoo..., se:cdpVersion: 126.0.6478.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a905fd68c66bfd7bc2f8d48d0815e059
+	at com.qa.opencart.tests.ProductInfoPageTest.productInfoTest(ProductInfoPageTest.java:63)
+

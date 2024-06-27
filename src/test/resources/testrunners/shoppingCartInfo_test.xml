@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Regression Suite" verbose="3" parallel="tests"
+	thread-count="2">
+<test name="Login Page Test">
+		<parameter name="browser" value="chrome"/>
+		<classes>
+			<class name="com.qa.opencart.tests.LoginPageTest" />
+			
+		</classes>
+	</test>
+
+
+	<test name="ShoppingCartInfo Page Test">
+		
+		<classes>
+			<class name="com.qa.opencart.tests.ShoppingCartInfoPageTest" />
+		</classes>
+	</test>
+</suite>
