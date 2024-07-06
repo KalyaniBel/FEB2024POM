@@ -29,6 +29,7 @@ public class ShoppingCartInfoPageTest extends BaseTest {
 		productInfoPage = searchResultsPage.selectProduct(productName);
 		shoppingCartInfoPage = productInfoPage.productAddToCart();
 		Assert.assertTrue(shoppingCartInfoPage.IsSuccessMessageDisplayed(), AppError.ADDTOCART_FAILED);
+	//	shoppingCartCheckOutPage = shoppingCartInfoPage.clickOnCart();
 	}
 
 	@Test(priority=2)
@@ -43,17 +44,21 @@ public class ShoppingCartInfoPageTest extends BaseTest {
 		shoppingCartCheckOutPage.getProductDetails();
 		shoppingCartCheckOutPage.editShoppingCart(1);
 		shoppingCartCheckOutPage.getProductDetails();
+		String[] totalCost=shoppingCartCheckOutPage.totalCost(1);
+		float expectedVal=Float.parseFloat(totalCost[0])*2;
+		float actualVal=Float.parseFloat(totalCost[1]);
+		Assert.assertEquals(actualVal,expectedVal,"MISMATCH DATA");
+		
 		
 
 	}
 	@Test(priority=4)
 	public void deleteShoppingCartTest() {
-		int expectedcount = shoppingCartCheckOutPage.shoppingCartProductRowCount()-1;	
-		System.out.println("expected count"+expectedcount);
-		shoppingCartCheckOutPage.deleteShoppingCartItem(1);
+		shoppingCartCheckOutPage.deleteShoppingCartItem(2);
 		int actualcount=shoppingCartCheckOutPage.shoppingCartProductRowCount();
 		System.out.println("Actual count" +actualcount);
-		Assert.assertEquals(actualcount,expectedcount,AppError.RESULTS_COUNT_MISMATCHED);
+		Assert.assertEquals(shoppingCartCheckOutPage.shoppingCartProductRowCount(),2,AppError.RESULTS_COUNT_MISMATCHED);
+		Assert.assertEquals(shoppingCartCheckOutPage.shoppingCartProductRowCount(),2,AppError.RESULTS_COUNT_MISMATCHED);
 		
 	}
 }

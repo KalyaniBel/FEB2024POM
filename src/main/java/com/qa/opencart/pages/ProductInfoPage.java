@@ -9,12 +9,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.qa.opencart.utils.ElementUtil;
+import com.qa.opencart.utils.JavaScriptUtil;
 import com.qa.opencart.utils.TimeUtil;
 
 public class ProductInfoPage {
 
 	private WebDriver driver;
 	private ElementUtil eleUtil;
+	private JavaScriptUtil jsUtil;
 	private By productHeader = By.cssSelector("div#content h1");
 	private By productImagesCount = By.cssSelector("div#content a.thumbnail");
 	private By productMetaData = By.xpath("(//div[@id='content']//ul[@class='list-unstyled'])[1]/li");
@@ -25,6 +27,7 @@ public class ProductInfoPage {
 	public ProductInfoPage(WebDriver driver) {
 		this.driver = driver;
 		eleUtil = new ElementUtil(driver);
+		JavaScriptUtil jsUtil = new JavaScriptUtil(driver);
 	}
 
 	public String getProductHeader() {
@@ -40,8 +43,9 @@ public class ProductInfoPage {
 		return imagesCount;
 	}
 	public ShoppingCartInfoPage productAddToCart() {
+		//jsUtil.scrollPageDown("1700");
 		By productQuantity=By.cssSelector("div#product input#input-quantity");
-		eleUtil.doSendKeys(productQuantity,"3",TimeUtil.DEFAULT_TIME);
+		eleUtil.doSendKeys(productQuantity,"3",TimeUtil.DEFAULT_MEDIUM_TIME);
 		eleUtil.doClick(By.cssSelector("#product button#button-cart"));
 		return new ShoppingCartInfoPage(driver);
 	}

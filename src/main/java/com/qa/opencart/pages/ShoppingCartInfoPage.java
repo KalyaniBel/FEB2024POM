@@ -38,7 +38,7 @@ public class ShoppingCartInfoPage {
 	}
 	
 	public  ShoppingCartCheckOutPage clickOnCart() {
-		eleUtil.clickWhenReady(By.cssSelector("div#cart span#cart-total"),TimeUtil.DEFAULT_TIME);
+		eleUtil.clickWhenReady(By.cssSelector("div#cart button[type='button']"),TimeUtil.DEFAULT_TIME);
 	eleUtil.doClick(By.cssSelector("p.text-right a"));
 	return new ShoppingCartCheckOutPage(driver);
 	}

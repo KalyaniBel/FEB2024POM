@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="4" parallel="tests" name="Failed suite [TestNG Regression Suite]" guice-stage="DEVELOPMENT" verbose="4">
-  <listeners>
-    <listener class-name="com.qa.opencart.listeners.ExtentReportListener"/>
-    <listener class-name="com.qa.opencart.listeners.TestAllureListener"/>
-    <listener class-name="com.qa.opencart.listeners.AnnotationTransformer"/>
-  </listeners>
-  <test thread-count="4" parallel="tests" name="Login Page Test(failed)" verbose="4">
-    <parameter name="browser" value="chrome"/>
+<suite thread-count="2" parallel="tests" name="Failed suite [TestNG Regression Suite]" guice-stage="DEVELOPMENT" verbose="3">
+  <test thread-count="2" parallel="tests" name="ShoppingCartInfo Page Test(failed)" verbose="3">
     <classes>
-      <class name="com.qa.opencart.tests.LoginPageTest">
+      <class name="com.qa.opencart.tests.ShoppingCartInfoPageTest">
         <methods>
+          <include name="ShoppingCartInfoPageSetup"/>
           <include name="setUp"/>
-          <include name="loginPageURLTest"/>
+          <include name="deleteShoppingCartTest"/>
         </methods>
-      </class> <!-- com.qa.opencart.tests.LoginPageTest -->
+      </class> <!-- com.qa.opencart.tests.ShoppingCartInfoPageTest -->
     </classes>
-  </test> <!-- Login Page Test(failed) -->
+  </test> <!-- ShoppingCartInfo Page Test(failed) -->
 </suite> <!-- Failed suite [TestNG Regression Suite] -->
