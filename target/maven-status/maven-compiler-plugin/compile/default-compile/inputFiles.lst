@@ -2,6 +2,7 @@ C:\Users\kalya\eclipse-workspace\Feb2024POMSeries\src\main\java\com\qa\opencart\
 C:\Users\kalya\eclipse-workspace\Feb2024POMSeries\src\main\java\com\qa\opencart\exceptions\FrameException.java
 C:\Users\kalya\eclipse-workspace\Feb2024POMSeries\src\main\java\com\qa\opencart\factory\DriverFactory.java
 C:\Users\kalya\eclipse-workspace\Feb2024POMSeries\src\main\java\com\qa\opencart\pages\ProductInfoPage.java
+C:\Users\kalya\eclipse-workspace\Feb2024POMSeries\src\main\java\com\qa\opencart\listeners\AnnotationTransformer.java
 C:\Users\kalya\eclipse-workspace\Feb2024POMSeries\src\main\java\com\qa\opencart\utils\ExcelUtil.java
 C:\Users\kalya\eclipse-workspace\Feb2024POMSeries\src\main\java\com\qa\opencart\exceptions\ElementException.java
 C:\Users\kalya\eclipse-workspace\Feb2024POMSeries\src\main\java\com\qa\opencart\listeners\TestAllureListener.java
@@ -17,4 +18,6 @@ C:\Users\kalya\eclipse-workspace\Feb2024POMSeries\src\main\java\com\qa\opencart\
 C:\Users\kalya\eclipse-workspace\Feb2024POMSeries\src\main\java\com\qa\opencart\pages\ShoppingCartInfoPage.java
 C:\Users\kalya\eclipse-workspace\Feb2024POMSeries\src\main\java\com\qa\opencart\utils\ElementUtil.java
 C:\Users\kalya\eclipse-workspace\Feb2024POMSeries\src\main\java\com\qa\opencart\listeners\ExtentReportListener.java
+C:\Users\kalya\eclipse-workspace\Feb2024POMSeries\src\main\java\com\qa\opencart\listeners\Retry.java
 C:\Users\kalya\eclipse-workspace\Feb2024POMSeries\src\main\java\com\qa\opencart\pages\LoginPage.java
+C:\Users\kalya\eclipse-workspace\Feb2024POMSeries\src\main\java\com\qa\opencart\factory\OptionsManager.java

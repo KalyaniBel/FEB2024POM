@@ -6,11 +6,14 @@ com\qa\opencart\pages\ShoppingCartCheckOutPage.class
 com\qa\opencart\exceptions\ElementException.class
 com\qa\opencart\listeners\ExtentReportListener.class
 com\qa\opencart\errors\AppError.class
+com\qa\opencart\factory\OptionsManager.class
 com\qa\opencart\utils\ElementUtil.class
 com\qa\opencart\pages\ProductInfoPage.class
 com\qa\opencart\pages\AccountsPage.class
+com\qa\opencart\listeners\AnnotationTransformer.class
 com\qa\opencart\exceptions\BrowserException.class
 com\qa\opencart\utils\JavaScriptUtil.class
+com\qa\opencart\listeners\Retry.class
 com\qa\opencart\pages\ShoppingCartInfoPage.class
 com\qa\opencart\utils\ExcelUtil.class
 com\qa\opencart\utils\TimeUtil.class
