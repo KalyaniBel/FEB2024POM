@@ -7,6 +7,7 @@
         <methods>
           <include name="ShoppingCartInfoPageSetup"/>
           <include name="setUp"/>
+          <include name="ItemsAddedSuccessfully" invocation-numbers="1"/>
           <include name="deleteShoppingCartTest"/>
         </methods>
       </class> <!-- com.qa.opencart.tests.ShoppingCartInfoPageTest -->
