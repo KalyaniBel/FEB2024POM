@@ -14,7 +14,6 @@
 
 
 	<test name="Accounts Page Test">
-		
 		<classes>
 			<class name="com.qa.opencart.tests.AccountsPageTest" />
 		</classes>
