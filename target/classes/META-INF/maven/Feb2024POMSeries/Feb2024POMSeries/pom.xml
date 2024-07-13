@@ -119,7 +119,7 @@
 					<reuseForks>true</reuseForks>
 					<suiteXmlFiles>
 						<suiteXmlFile>
-							src/test/resources/testrunners/shoppingCartInfo_test.xml</suiteXmlFile>
+							src/test/resources/testrunners/ProductInfotestrunner.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<argLine>
 						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
