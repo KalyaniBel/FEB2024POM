@@ -2,37 +2,23 @@
 
 <suite name="TestNG Regression Suite" verbose="3" parallel="tests"
 	thread-count="2">
+<listeners>
+		<listener
+			class-name="com.qa.opencart.listeners.ExtentReportListener" />
+			<listener
+			class-name="com.qa.opencart.listeners.TestAllureListener" />
+			<listener
+			class-name="com.qa.opencart.listeners.AnnotationTransformer" />
+	</listeners>
 
-
-	<test name="Google Test_chrome">
-		<parameter name="browser" value="chrome" />
-		<parameter name="url" value="https://google.com" />
-
+	<test name="Login Page Test">
+		<parameter name="browser" value="chrome"/>
 		<classes>
-			<class name="myTest.GoogleTest" />
+			<class name="com.qa.opencart.tests.LoginPageTest" />
 			
 		</classes>
 	</test>
 
 
-	<test name="Open Cart Test">
-		<parameter name="browser" value="firefox" />
-		<parameter name="url"
-			value="https://naveenautomationlabs.com/opencart/index.php?route=account/login" />
-
-
-		<classes>
-			<class name="myTest.OpenCartLoginTest" />
-		</classes>
-	</test>
-	<test name="OrangeHRM Test">
-		<parameter name="browser" value="Edge" />
-		<parameter name="url"
-			value="https://orangehrm.com/en/book-a-free-demo/" />
-
-
-		<classes>
-			<class name="myTest.OrangeHRMTest" />
-		</classes>
-	</test>
+	
 </suite>
