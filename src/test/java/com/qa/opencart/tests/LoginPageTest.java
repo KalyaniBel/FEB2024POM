@@ -45,8 +45,8 @@ public class LoginPageTest extends BaseTest{
 	@Test(priority=4)
 	@Feature("Login Test Feature")
 	public void loginTest() {
-	//accPage=loginPage.doLogin(prop.getProperty("username"),prop.getProperty("password"));
-	accPage=loginPage.doLogin(System.getProperty("username"),System.getProperty("password"));
+	accPage=loginPage.doLogin(prop.getProperty("username"),prop.getProperty("password"));
+//	accPage=loginPage.doLogin(System.getProperty("username"),System.getProperty("password"));
 		Assert.assertEquals(accPage.getAccPageTitle(),AppConstants.ACCOUNTS_PAGE_TITLE,AppError.TITLE_NOT_FOUND);
 	}
 }
