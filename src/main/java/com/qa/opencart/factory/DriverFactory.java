@@ -1,6 +1,5 @@
 package com.qa.opencart.factory;
 
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -34,46 +33,47 @@ public class DriverFactory {
 	OptionsManager optionsManager;
 	public static String highlight;
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
+
 	public WebDriver initDriver(Properties prop) {
 		// cross browser logic
 		String browserName = prop.getProperty("browser");
 		System.out.println("browser name is: " + browserName);
-		highlight=prop.getProperty("highlight");
-		optionsManager=new OptionsManager(prop);
+		highlight = prop.getProperty("highlight");
+		optionsManager = new OptionsManager(prop);
 		switch (browserName.toLowerCase().trim()) {
 		case "chrome":
-			//driver = new ChromeDriver();
-			//tlDriver.set(new ChromeDriver(optionsManager.getChromeOptions()));
-			if(Boolean.parseBoolean(prop.getProperty("remote"))) {
+			// driver = new ChromeDriver();
+			// tlDriver.set(new ChromeDriver(optionsManager.getChromeOptions()));
+			if (Boolean.parseBoolean(prop.getProperty("remote"))) {
 				initRemoteDriver("chrome");
-			}else {
+			} else {
 				tlDriver.set(new ChromeDriver(optionsManager.getChromeOptions()));
 			}
-				
+
 			break;
 		case "firefox":
-			//driver = new FirefoxDriver();
-			//tlDriver.set(new FirefoxDriver(optionsManager.getFirefoxOptions()));
-			if(Boolean.parseBoolean(prop.getProperty("remote"))) {
+			// driver = new FirefoxDriver();
+			// tlDriver.set(new FirefoxDriver(optionsManager.getFirefoxOptions()));
+			if (Boolean.parseBoolean(prop.getProperty("remote"))) {
 				initRemoteDriver("firefox");
-			}else {
+			} else {
 				tlDriver.set(new FirefoxDriver(optionsManager.getFirefoxOptions()));
 			}
 			break;
 		case "edge":
-			//driver = new EdgeDriver();
-			//tlDriver.set(new EdgeDriver(optionsManager.getEdgeOptions()));
-			if(Boolean.parseBoolean(prop.getProperty("remote"))) {
+			// driver = new EdgeDriver();
+			// tlDriver.set(new EdgeDriver(optionsManager.getEdgeOptions()));
+			if (Boolean.parseBoolean(prop.getProperty("remote"))) {
 				initRemoteDriver("edge");
-			}else {
+			} else {
 				tlDriver.set(new EdgeDriver(optionsManager.getEdgeOptions()));
 			}
 			break;
 		case "safari":
-			//driver = new SafariDriver()
-					tlDriver.set(new SafariDriver());
-					break;
-			
+			// driver = new SafariDriver()
+			tlDriver.set(new SafariDriver());
+			break;
+
 		default:
 			System.out.println("Please pass right browser name---" + browserName);
 			throw new BrowserException(AppError.BROWSER_NOT_FOUND);
@@ -83,39 +83,43 @@ public class DriverFactory {
 		getDriver().get(prop.getProperty("url"));
 		return getDriver();
 	}
-	
-public static  WebDriver getDriver() {
-	return tlDriver.get();
-}
- private void initRemoteDriver(String browserName) {
-	 System.out.println("Running it on Selenium Grid with browser  : "+browserName);
-	 try{
-		 switch(browserName) {
-	 
-	 case "chrome":
-		           tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")),optionsManager.getChromeOptions()));
-		           break;
-	 case "firefox":
-         tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")),optionsManager.getFirefoxOptions()));
-         break;
-	 case "edge":
-         tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")),optionsManager.getEdgeOptions()));
-         break;
-         default:
-        	 System.out.println("Please pass the right browser on Grid...");
-        	 throw new BrowserException(AppError.BROWSER_NOT_FOUND);
-	 }
-		 }catch(MalformedURLException e) {
-			 e.printStackTrace();
-		 }
- }
+
+	public static WebDriver getDriver() {
+		return tlDriver.get();
+	}
+
+	private void initRemoteDriver(String browserName) {
+		System.out.println("Running it on Selenium Grid with browser  : " + browserName);
+		try {
+			switch (browserName) {
+
+			case "chrome":
+				tlDriver.set(
+						new RemoteWebDriver(new URL(prop.getProperty("huburl")), optionsManager.getChromeOptions()));
+				break;
+			case "firefox":
+				tlDriver.set(
+						new RemoteWebDriver(new URL(prop.getProperty("huburl")), optionsManager.getFirefoxOptions()));
+				break;
+			case "edge":
+				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), optionsManager.getEdgeOptions()));
+				break;
+			default:
+				System.out.println("Please pass the right browser on Grid...");
+				throw new BrowserException(AppError.BROWSER_NOT_FOUND);
+			}
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+	}
+
 	public Properties initProp() {
 
 		prop = new Properties();
 		FileInputStream ip = null;
 		// mvn clean install -Denv="qa"
 		String envName = System.getProperty("env");
-		System.out.println("Running Test Suite on env----->" +envName);
+		System.out.println("Running Test Suite on env----->" + envName);
 		if (envName == null) {
 			try {
 				System.out.println("envName Is null, hence running on QA environment");
@@ -159,26 +163,27 @@ public static  WebDriver getDriver() {
 		}
 		return prop;
 	}
+
 	/**
 	 * take screenshot
 	 */
-	
+
 	public static String getScreenshot(String methodName) {
-		
-		
-		File srcFile = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);//temp location
-		
-		String path = System.getProperty("user.dir")+"/screenshots/"+methodName+"_"+System.currentTimeMillis()+".png";
-		
+
+		File srcFile = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);// temp location
+
+		String path = System.getProperty("user.dir") + "/screenshots/" + methodName + "_" + System.currentTimeMillis()
+				+ ".png";
+
 		File destination = new File(path);
-		
+
 		try {
 			FileHandler.copy(srcFile, destination);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 		return path;
 	}
-	
+
 }
